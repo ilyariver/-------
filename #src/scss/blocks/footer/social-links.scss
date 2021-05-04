@@ -1,0 +1,32 @@
+.social-links {
+  display: flex;
+
+  &__link {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    &--twitter {
+      background-image: url("../img/footer/twitter.svg");
+    }
+    &--vk {
+      background-image: url("../img/footer/vk.svg");
+    }
+    &--facebook {
+      background-image: url("../img/footer/facebook.svg");
+    }
+    &--instagram {
+      background-image: url("../img/footer/instagram.svg");
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  @include courses-extra-small {
+    display: flex;
+    justify-content: center;
+  }
+
+}

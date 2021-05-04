@@ -1,0 +1,95 @@
+.section-courses {
+  padding: 0 0 30px;
+
+  li.hide {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    width: 170px;
+    margin: 30px 0;
+    border: 1px solid #b2b2b2;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__figure {
+    margin: 0;
+  }
+
+  &__figcaption {
+    padding: 10px 16px;
+    font-size: 14px;
+
+    &>*:not(:last-child) {
+      padding-left: 5px;
+    }
+  }
+
+  &__about {
+    margin-bottom: 10px;
+  }
+
+  &__grade {
+    margin: 0;
+  }
+
+  &__genre {
+    margin: 0 0 10px 0;
+    font-size: 11px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  &__more {
+    margin-bottom: 10px;
+  }
+
+  &__more-link {
+    color: #00c1ff;
+    font-size: 12px;
+    font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__price-btn {
+    display: flex;
+    justify-content: center;
+    line-height: 25px;
+    font-size: 12px;
+    padding: 0 5px;
+    background-color: #00c1ff;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background-color: darken(#00c1ff, 5%);
+    }
+  }
+
+  @include courses-extra-small {
+
+    &__list {
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    &__item {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  }
+}

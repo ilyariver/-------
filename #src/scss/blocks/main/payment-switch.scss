@@ -1,0 +1,26 @@
+.payment-switch {
+  display: flex;
+  justify-content: center;
+  &.hidden {
+    display: none;
+  }
+
+  &__btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    &.active {
+      background-color: #00c1ff;
+      color: #fff;
+    }
+    &--rub {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    &--bonus {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}

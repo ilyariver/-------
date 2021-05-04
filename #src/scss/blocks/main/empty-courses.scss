@@ -1,0 +1,14 @@
+.empty-courses {
+  display: none;
+  text-align: center;
+  &.show {
+    display: block;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  &__text {
+    font-weight: 600;
+  }
+}

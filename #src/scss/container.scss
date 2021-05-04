@@ -1,0 +1,29 @@
+.container {
+  max-width: 1060px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include courses-extra-small {}
+
+  @include extra-small {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include small {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include medium {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include large {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+

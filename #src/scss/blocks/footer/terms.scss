@@ -1,0 +1,34 @@
+.terms {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  @include courses-extra-small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    &__item {
+      width: 50%;
+    }
+  }
+
+  @include extra-small {
+    &__item {
+      width: 33.33%;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+      &:last-child {
+        text-align: end;
+      }
+    }
+  }
+}

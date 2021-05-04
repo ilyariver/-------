@@ -1,0 +1,45 @@
+//GLOBAL
+
+@import "variables";
+@import "normalize";
+@import "global";
+@import "mixins";
+@import "fonts";
+@import "visually-hidden";
+@import "container";
+
+//HEADER
+
+@import "blocks/header/header";
+
+
+//MAIN
+
+@import "blocks/main/main";
+@import "blocks/main/section-search-product";
+@import "blocks/main/section-courses";
+@import "blocks/main/payment-switch";
+@import "blocks/main/empty-courses";
+
+//FOOTER
+
+@import "blocks/footer/footer";
+@import "blocks/footer/terms";
+@import "blocks/footer/social-links";
+@import "blocks/footer/contacts-info";
+
+//MODAL
+
+//@import "modal/modal";
+
+
+//SLIDER
+
+//@import "blocks/slider";
+
+
+
+
+
+
+
